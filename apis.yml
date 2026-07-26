@@ -1,7 +1,27 @@
 aid: fanatics-holdings
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/fanatics-holdings.png
 name: Fanatics Holdings
-description: Fanatics Holdings is a company surfaced as a portfolio company of a16z and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Fanatics Holdings, Inc. is a global digital sports platform that connects
+  fans with the teams, leagues, players, and events they love. Founded in 2011
+  and led by Michael Rubin, the company operates across several business
+  segments: Fanatics Commerce (licensed sports merchandise, e-commerce, and
+  manufacturing), Fanatics Collectibles (trading cards and memorabilia,
+  including Topps), and Fanatics Betting & Gaming (the Fanatics Sportsbook and
+  online casino). It has no public developer API program or published API
+  specification; it is tracked in the API Evangelist network as a company
+  profile surfaced from a16z's venture portfolio.
 url: https://raw.githubusercontent.com/api-evangelist/fanatics-holdings/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +31,30 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Sports
+- E-Commerce
+- Retail
+- Collectibles
+- Trading Cards
+- Betting
+- Gaming
+- Sportsbook
+common:
+- type: DomainSecurity
+  url: security/fanatics-holdings-domain-security.yml
+- url: https://www.fanatics.com/
+  type: Website
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
